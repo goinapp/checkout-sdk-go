@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/checkout/checkout-sdk-go/common"
+	"github.com/goinapp/checkout-sdk-go/common"
 )
 
 // ClientVersion ...

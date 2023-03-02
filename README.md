@@ -14,7 +14,7 @@ go mod init
 
 ```go
 import (
-    "github.com/checkout/checkout-sdk-go"
+    "github.com/goinapp/checkout-sdk-go"
 )
 ```
 
@@ -48,8 +48,8 @@ be instantiated at once, or you can choose to create single modules separately.
 
 ```go
 import (
-    "github.com/checkout/checkout-sdk-go"
-    "github.com/checkout/checkout-sdk-go/client"
+    "github.com/goinapp/checkout-sdk-go"
+    "github.com/goinapp/checkout-sdk-go/client"
 )
 
 api := client.CheckoutApi(&secretKey, &publicKey, Sandbox) // or Production
@@ -58,8 +58,8 @@ var tokensClient = api.Tokens
 
 ```go
 import (
-"github.com/checkout/checkout-sdk-go"
-"github.com/checkout/checkout-sdk-go/client"
+"github.com/goinapp/checkout-sdk-go"
+"github.com/goinapp/checkout-sdk-go/client"
 )
 
 config, err := checkout.SdkConfig(&secretKey, &publicKey, Sandbox) // or Production
@@ -70,8 +70,8 @@ var tokensClient = tokens.NewClient(*config)
 
 ```go
 import (
-    "github.com/checkout/checkout-sdk-go"
-    "github.com/checkout/checkout-sdk-go/tokens"
+    "github.com/goinapp/checkout-sdk-go"
+    "github.com/goinapp/checkout-sdk-go/tokens"
 )
 
 config, err := checkout.SdkConfig(&secretKey, &publicKey, Sandbox) // or Production
@@ -94,8 +94,8 @@ response, err := client.Request(request)
 
 ```go
 import (
-    "github.com/checkout/checkout-sdk-go"
-    "github.com/checkout/checkout-sdk-go/payments"
+    "github.com/goinapp/checkout-sdk-go"
+    "github.com/goinapp/checkout-sdk-go/payments"
 )
 
 config, err := checkout.SdkConfig(&secretKey, &publicKey, Sandbox) // or Production
@@ -131,8 +131,8 @@ response, err := client.Request(request, &params)
 
 ```go
 import (
-    "github.com/checkout/checkout-sdk-go"
-    "github.com/checkout/checkout-sdk-go/payments"
+    "github.com/goinapp/checkout-sdk-go"
+    "github.com/goinapp/checkout-sdk-go/payments"
 )
 
 config, err := checkout.SdkConfig(&secretKey, &publicKey, Sandbox) // or Production
@@ -145,8 +145,8 @@ response, err := client.Get("pay_")
 
 ```go
 import (
-    "github.com/checkout/checkout-sdk-go"
-    "github.com/checkout/checkout-sdk-go/payments"
+    "github.com/goinapp/checkout-sdk-go"
+    "github.com/goinapp/checkout-sdk-go/payments"
 )
 
 config, err := checkout.SdkConfig(&secretKey, &publicKey, Sandbox) // or Production
@@ -159,8 +159,8 @@ response, err := client.Actions("pay_")
 
 ```go
 import (
-    "github.com/checkout/checkout-sdk-go"
-    "github.com/checkout/checkout-sdk-go/payments"
+    "github.com/goinapp/checkout-sdk-go"
+    "github.com/goinapp/checkout-sdk-go/payments"
 )
 
 config, err := checkout.SdkConfig(&secretKey, &publicKey, Sandbox) // or Production
@@ -185,8 +185,8 @@ response, err := client.Captures("pay_", request, &params)
 
 ```go
 import (
-    "github.com/checkout/checkout-sdk-go"
-    "github.com/checkout/checkout-sdk-go/payments"
+    "github.com/goinapp/checkout-sdk-go"
+    "github.com/goinapp/checkout-sdk-go/payments"
 )
 
 config, err := checkout.SdkConfig(&secretKey, &publicKey, Sandbox) // or Production
@@ -210,8 +210,8 @@ response, err := client.Voids("pay_", request, &params)
 
 ```go
 import (
-    "github.com/checkout/checkout-sdk-go"
-    "github.com/checkout/checkout-sdk-go/payments"
+    "github.com/goinapp/checkout-sdk-go"
+    "github.com/goinapp/checkout-sdk-go/payments"
 )
 
 config, err := checkout.SdkConfig(&secretKey, &publicKey, Sandbox) // or Production

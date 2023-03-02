@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/checkout/checkout-sdk-go"
-	"github.com/checkout/checkout-sdk-go/common"
+	"github.com/goinapp/checkout-sdk-go"
+	"github.com/goinapp/checkout-sdk-go/common"
 )
 
 type (

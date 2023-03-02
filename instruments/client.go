@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/checkout/checkout-sdk-go"
-	"github.com/checkout/checkout-sdk-go/httpclient"
-	"github.com/checkout/checkout-sdk-go/payments"
+	"github.com/goinapp/checkout-sdk-go"
+	"github.com/goinapp/checkout-sdk-go/httpclient"
+	"github.com/goinapp/checkout-sdk-go/payments"
 )
 
 const path = "instruments"

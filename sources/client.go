@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/checkout/checkout-sdk-go"
-	"github.com/checkout/checkout-sdk-go/httpclient"
+	"github.com/goinapp/checkout-sdk-go"
+	"github.com/goinapp/checkout-sdk-go/httpclient"
 )
 
 const path = "sources"

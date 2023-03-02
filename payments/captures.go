@@ -1,7 +1,7 @@
 package payments
 
 import (
-	"github.com/checkout/checkout-sdk-go"
+	"github.com/goinapp/checkout-sdk-go"
 )
 
 // CaptureType ...

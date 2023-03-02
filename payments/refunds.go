@@ -1,6 +1,6 @@
 package payments
 
-import "github.com/checkout/checkout-sdk-go"
+import "github.com/goinapp/checkout-sdk-go"
 
 // RefundsRequest ..
 type RefundsRequest struct {
