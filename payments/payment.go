@@ -411,9 +411,9 @@ type (
 
 	// Recipient ...
 	Recipient struct {
-		DOB           string `json:"dob"`
+		DOB           string `json:"dob,omitempty"`
 		AccountNumber string `json:"account_number"`
-		ZIP           string `json:"zip"`
+		ZIP           string `json:"zip,omitempty"`
 		FirstName     string `json:"first_name"`
 		LastName      string `json:"last_name"`
 	}
