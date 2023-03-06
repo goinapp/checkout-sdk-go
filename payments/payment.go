@@ -412,10 +412,10 @@ type (
 	// Recipient ...
 	Recipient struct {
 		DOB           string `json:"dob,omitempty"`
-		AccountNumber string `json:"account_number"`
+		AccountNumber string `json:"account_number,omitempty"`
 		ZIP           string `json:"zip,omitempty"`
-		FirstName     string `json:"first_name"`
-		LastName      string `json:"last_name"`
+		FirstName     string `json:"first_name,omitempty"`
+		LastName      string `json:"last_name,omitempty"`
 	}
 
 	// Destination ...
