@@ -402,7 +402,8 @@ type (
 
 	// Risk ...
 	Risk struct {
-		Enabled *bool `json:"enabled,omitempty"`
+		Enabled         *bool  `json:"enabled,omitempty"`
+		DeviceSessionId string `json:"device_session_id,omitempty"`
 	}
 
 	// RiskAssessment ...
