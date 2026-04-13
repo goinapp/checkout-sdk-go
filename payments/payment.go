@@ -31,6 +31,7 @@ type (
 		SuccessURL        string             `json:"success_url,omitempty,omitempty"`
 		FailureURL        string             `json:"failure_url,omitempty,omitempty"`
 		PaymentIP         string             `json:"payment_ip,omitempty"`
+		Sender            *Sender            `json:"sender,omitempty"`
 		Recipient         *Recipient         `json:"recipient,omitempty"`
 		Destinations      []*Destination     `json:"destinations,omitempty"`
 		Processing        *Processing        `json:"processing,omitempty"`
@@ -409,7 +410,16 @@ type (
 		Flagged *bool `json:"flagged,omitempty"`
 	}
 
-	// Recipient ...
+	// Sender ...
+	Sender struct {
+		Type          string `json:"type,omitempty"`
+		FirstName     string `json:"first_name,omitempty"`
+		LastName      string `json:"last_name,omitempty"`
+		DateOfBirth   string `json:"date_of_birth,omitempty"`
+		Address       *common.Address `json:"address,omitempty"`
+	}
+
+		// Recipient ...
 	Recipient struct {
 		DOB           string `json:"dob,omitempty"`
 		AccountNumber string `json:"account_number,omitempty"`
